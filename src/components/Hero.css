@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Make slick-slide behave properly */
+.slick-slide > div {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Carousel container */
+.caro-main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: auto;
+  text-align: center;
+}
+
+/* Flex container for each slide */
+.caro-img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* The image */
+.caro-img {
+  width: 100%;      /* reduce width as you wanted */
+  height: 10vh;
+  height: 100%;
+  object-fit: cover;
+}
