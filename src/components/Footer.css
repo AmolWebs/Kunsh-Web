@@ -1,6 +1,30 @@
-.main-footer{
-    background-color: #F5F5F5;
+/* .main-footer{
     padding: 0.5rem 2rem;
+    background: url('/public/spices.jpeg') no-repeat fixed center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100vw;
+
+    object-fit: cover;
+} */
+.image-footer{
+  background-image: url('/public/spices.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+.main-footer {
+     background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  z-index: 1;
+  color: white; /* for contrast */
+  padding: 50px;
+}
+
+.main-footer::before {
+  content: "";
+
 }
 
 .footer-heading{
