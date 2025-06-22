@@ -118,6 +118,9 @@ nav {
 
 /* Responsive behavior */
 @media (max-width: 768px) {
+    nav{
+        padding: 0.5rem 1rem;
+    }
   .desktop-menu {
     display: none;
   }
