@@ -72,6 +72,9 @@ nav {
     cursor: pointer;
     gap: 4px;
     z-index: 1001;
+    padding: 8px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
 }
 
 .hamburger span {
