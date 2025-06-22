@@ -18,49 +18,17 @@ const Hero = () => {
     }
   ]
 
-  const PrevArrow = ({ onClick }) => (
-    <div
-      style={{
-        position: 'absolute',
-        left: '10px',
-        top: '50%',
-        transform: 'translateY(-50%)',
-        zIndex: 2,
-        cursor: 'pointer',
-        fontSize: '30px',
-        color: 'black',
-        borderRadius: '50%',
-        backgroundColor:'#FF8356',
-        padding:'.5rem',
-        opacity:'0.2',
-      }}
-      onClick={onClick}
-    >
-      ←
-    </div>
-  );
+const PrevArrow = ({ onClick }) => (
+  <div className="custom-arrow prev-arrow" onClick={onClick}>
+    ←
+  </div>
+);
 
-  const NextArrow = ({ onClick }) => (
-    <div
-      style={{
-        position: 'absolute',
-        right: '10px',
-        top: '50%',
-        transform: 'translateY(-50%)',
-        zIndex: 2,
-        cursor: 'pointer',
-        fontSize: '30px',
-        color: 'black',
-        borderRadius: '50%',
-        backgroundColor:'#FF8356',
-        padding:'.5rem',
-        opacity:'0.2',
-      }}
-      onClick={onClick}
-    >
-      →
-    </div>
-  );
+const NextArrow = ({ onClick }) => (
+  <div className="custom-arrow next-arrow" onClick={onClick}>
+    →
+  </div>
+);
 
   var settings = {
     dots: true,
