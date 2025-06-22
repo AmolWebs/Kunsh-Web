@@ -1,0 +1,40 @@
+
+
+
+
+.about-heading{
+      color: #F54D42;
+    font-family: "Sevillana", cursive;
+  font-weight: 700;
+  font-style: normal;
+    font-size: 3rem;
+    text-align: start;
+    padding-bottom: 20px;
+}
+
+.about-sec{
+    padding: .5rem 2rem;
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7%;
+}
+
+.about-txt{
+        color: #6f6f6f;
+        /* padding-right: 50px; */
+}
+
+
+@media (max-width: 768px){
+    .about-sec{
+        flex-direction: column;
+    }
+    .about-heading{
+        text-align: center;
+    }
+    .about-i{
+        width: 80vw;
+    }
+}

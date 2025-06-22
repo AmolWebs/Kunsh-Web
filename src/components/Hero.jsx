@@ -53,44 +53,6 @@ const NextArrow = ({ onClick }) => (
           ))}
         </Slider>
       </div>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
-      <h1>HEllo</h1>
     </div>
   )
 }
