@@ -46,7 +46,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="footer-rights">© 2025 All Rights Reserved. Developed By Amol</div>
+            <div className="footer-rights">© 2025 All Rights Reserved. Developed By Cognixis</div>
             </div>
         </footer>
     )
