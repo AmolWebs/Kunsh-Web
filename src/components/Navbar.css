@@ -1,65 +1,136 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-nav{
-    padding: 0.5rem 3rem;
+nav {
+  padding: 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #FFCD00;
+  box-shadow: black 1px 2px 20px;
+  position: relative;
+  z-index: 1000;
+}
+
+.nav-logo {
+  width: 7vw;
+  min-width: 80px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links li {
+  font-size: large;
+  color: black;
+  font-weight: 600;
+}
+
+.nav-links .active {
+  background-color: #F54D42;
+  border-radius: 10px;
+  transition: all 0.3s ease-in;
+}
+
+.nav-links .active li {
+  color: white;
+}
+
+.order-btn {
+  padding: 1rem;
+  background-color: #F54D42;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: large;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* Hamburger styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+  z-index: 1001;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: black;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile full-screen slide-in menu */
+.nav-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  width: 100%;
+  background-color: #FFCD00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.4s ease-in-out;
+  z-index: 1000;
+}
+
+.nav-menu.open {
+  right: 0;
+}
+
+.nav-menu .mobile-menu {
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .hamburger {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    background-color: #FFCD00;
-    /* background-color: #FF8356; */
-    box-shadow: black 1px 2px 40px;
-}
+  }
 
-.nav-logo{
-    width: 7vw;
-}
+  .order-btn {
+    display: none;
+  }
 
-ul{
-    display: flex;
-    list-style: none;
-    align-items: center;
-    justify-content: center;
-}
-
-a{
-    text-decoration: none;
-    padding: 1rem;
-    /* background-color: red; */
-}
-
-li{
-    list-style: none;
-    font-size: large;
-    color: black;
-    font-weight: 600;
-}
-
-.nav-links .active{
-    background-color: #F54D42;
-    border-radius: 10px;
-    transition: all 0.3s ease-in;
-}
-
-.nav-links .active li{
-        color: white;
-}
-
-.order-btn{
-    padding: 1rem;
-    background-color: #F54D42;
-    color: white;
-    border: 0.1px solid black;
-    border-radius: 10px;
-    font-size: large;
-    font-weight: 600;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap:0.2rem;
+  .nav-logo {
+    width: 25vw;
+  }
 }
