@@ -1,0 +1,101 @@
+.our-pro-sec {
+    padding-top: 70px;
+}
+
+.product-heading {
+    color: #F54D42;
+    font-family: "Sevillana", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+
+.slider-pro .slick-slider>div {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* Carousel container */
+.caro-main {
+    padding-top: 90px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+}
+
+/* Flex container for each slide */
+.caro-img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* The image */
+.caro-img {
+    width: 100%;
+    /* reduce width as you wanted */
+    height: 10vh;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .caro-main {
+        padding-top: 70px;
+    }
+}
+
+.p-custom-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    cursor: pointer;
+    font-size: 30px;
+    color: black;
+    border-radius: 50%;
+    /* background-color: #FF8356; */
+    padding: .2rem;
+    opacity: 0.2;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.custom-arrow:hover {
+    opacity: 1;
+}
+
+.prev-arrow {
+    left: 10px;
+}
+
+.next-arrow {
+    right: 10px;
+}
+
+/* ✅ Mobile Responsiveness */
+@media (max-width: 768px) {
+    .custom-arrow {
+        font-size: 20px;
+        padding: 0.3rem;
+        opacity: 0.5;
+    }
+
+    .prev-arrow {
+        left: 5px;
+    }
+
+    .next-arrow {
+        right: 5px;
+    }
+}

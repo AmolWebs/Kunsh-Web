@@ -1,12 +1,12 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 
 /* Make slick-slide behave properly */
-.slick-slide > div {
+.slick-slide>div {
   display: flex !important;
   justify-content: center;
   align-items: center;
@@ -34,19 +34,23 @@
 
 /* The image */
 .caro-img {
-  width: 100%;      /* reduce width as you wanted */
+  width: 100%;
+  /* reduce width as you wanted */
   height: 10vh;
   height: 100%;
   object-fit: cover;
 }
 
-@media (max-width: 768px){
-  .caro-main{
+@media (max-width: 768px) {
+  .caro-main {
     padding-top: 70px;
   }
 }
 
 .custom-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -54,8 +58,8 @@
   cursor: pointer;
   font-size: 30px;
   color: black;
-  border-radius: 50%;
-  background-color: #FF8356;
+  border-radius: 10%;
+  background-color: #F5F5F5;
   padding: 0.5rem;
   opacity: 0.2;
   transition: opacity 0.3s ease, transform 0.3s ease;
