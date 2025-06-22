@@ -40,7 +40,7 @@ const ClientFeedbacks = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,         // default for desktop
+        slidesToShow: 2,         // default for desktop
         slidesToScroll: 1,
         arrows: true,
         prevArrow: <PrevArrow />,
