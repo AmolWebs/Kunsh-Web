@@ -4,7 +4,7 @@
 
 .about-heading{
       color: #F54D42;
-    font-family: "Sevillana", cursive;
+    font-family: "Yeseva One", serif;
   font-weight: 700;
   font-style: normal;
     font-size: 3rem;
@@ -36,5 +36,9 @@
     }
     .about-i{
         width: 80vw;
+    }
+
+    .about-heading{
+        font-size: 1.7rem;
     }
 }

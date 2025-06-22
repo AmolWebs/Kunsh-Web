@@ -4,7 +4,7 @@
 
 .product-heading {
     color: #F54D42;
-    font-family: "Sevillana", cursive;
+    font-family: "Yeseva One", serif;
     font-weight: 700;
     font-style: normal;
     font-size: 3rem;
@@ -97,5 +97,8 @@
 
     .next-arrow {
         right: 5px;
+    }
+    .product-heading{
+        font-size: 1.7rem;
     }
 }
