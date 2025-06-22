@@ -7,6 +7,7 @@ import ProductDetails from './pages/ProductDetails'
 import HistoryPage from './pages/HistoryPage'
 import ContactUs from './pages/ContactUs'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path='/history' element={<HistoryPage />} />
         <Route path='/contact-us' element={<ContactUs />} />
       </Routes>
+      <Footer/>
     </div>
   )
 }
