@@ -24,7 +24,8 @@
 .main-footer {
     display: flex;
     align-items: start;
-    
+    /* background-color: red; */
+    width: 100vw;
     justify-content: space-between;
     padding: 20px;
     min-height: 70vh;
