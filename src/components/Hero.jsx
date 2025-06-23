@@ -31,15 +31,17 @@ const NextArrow = ({ onClick }) => (
 );
 
   var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
-  };
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  autoplay: true,           
+  autoplaySpeed: 5000,      
+  prevArrow: <PrevArrow />,
+  nextArrow: <NextArrow />,
+};
 
   return (
     <div >
